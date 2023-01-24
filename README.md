@@ -81,3 +81,7 @@ now wrap it in a function ex-
             }
         </nameContext.Consumer>
 ```
+
+## ContextApi - problem 
+
+because of step 4 it was create callback hell like situation so its hard to maintain the code ,so solution for such situation is useContext-hook
