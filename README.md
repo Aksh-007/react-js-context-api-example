@@ -9,7 +9,8 @@ ChildA, ChildB, ChildC and want to pass data from app.js to ChildC and all compo
 
         }
     }
-}```
+}
+ ```
  so its difficult to use props so here we use contextApi 
 
  In contextApi ther are three stage 
