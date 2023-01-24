@@ -3,13 +3,13 @@
 suppose there are three components 
 ChildA, ChildB, ChildC and want to pass data from app.js to ChildC and all componets are nested in each other like :-
 
-ChildA {
+```ChildA {
     ChildB {
         ChildC {
 
         }
     }
-}
+}```
  so its difficult to use props so here we use contextApi 
 
  In contextApi ther are three stage 
@@ -17,33 +17,33 @@ ChildA {
 
 ## step 1 -
  create provider 
- ex :- export const nameContext = createContext();
+ ex :- ```export const nameContext = createContext();
  export const genderContext = createContext();
 export const salaryContext = createContext();
-
+```
 ## step 2:- 
  provide data that need to pass to other components ex:-
 
-  const name = "akshay";
+ ``` const name = "akshay";
   const gender = "male";
-  const salary = 1_00_000;
+  const salary = 1_00_000;```
 
 ## step3-
  wrap the components where we want to send data
 
- <nameContext.Provider value={name}>
+ ```<nameContext.Provider value={name}>
         <genderContext.Provider value={gender}>
           <salaryContext.Provider value={salary}>
             <ChildA />
           </salaryContext.Provider>
         </genderContext.Provider>
-      </nameContext.Provider>
+      </nameContext.Provider>```
 
 ## step 4:-
 
 now wrap it in a function ex-
 
-
+```
  <nameContext.Consumer>
             {
                 (name) => {
@@ -70,4 +70,4 @@ now wrap it in a function ex-
                     )
                 }
             }
-        </nameContext.Consumer>
+        </nameContext.Consumer>```
