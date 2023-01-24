@@ -85,3 +85,26 @@ now wrap it in a function ex-
 ## ContextApi - problem 
 
 because of step 4 it was create callback hell like situation so its hard to maintain the code ,so solution for such situation is useContext-hook
+
+ ```
+ note:- if you want to use context hook after step 4 follow follwing step 
+ ```
+
+ ## step 4 -
+
+
+ ```
+ const ChildD = () => {
+
+    const name = useContext(nameContext);
+    const gender = useContext(genderContext);
+    const salary = useContext(salaryContext);
+  return (
+    <>
+        <h1 style={{fontSize:"1rem"}}>
+            hi my name is {name} and my gender is {gender} and i earn {salary}
+        </h1>
+    </>
+  )
+}
+ ```
