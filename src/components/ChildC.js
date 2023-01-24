@@ -3,7 +3,6 @@ import React from 'react';
 //step 2-
 // here we provide data 
 import { nameContext, genderContext, salaryContext } from '../App.js'
-
 const ChildC = () => {
     return (
         <nameContext.Consumer>
@@ -20,7 +19,7 @@ const ChildC = () => {
                                                     <div>
                                                         <h1 style={{ fontSize: "2rem" }}>My name is {name}</h1>
                                                         <p>My gender is {gender}</p>
-                                                        <p>My gender is {salary}</p>
+                                                        <p>My salary is {salary}</p>
                                                     </div>
                                                 )
                                             }}
